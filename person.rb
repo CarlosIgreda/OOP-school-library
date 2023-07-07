@@ -20,6 +20,6 @@ class Person
   end
 
   def generate_id
-    @id = Random.rand(1..500)
+    Random.rand(1..500)
   end
 end
