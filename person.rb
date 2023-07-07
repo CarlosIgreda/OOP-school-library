@@ -11,6 +11,7 @@ class Person < Nameable
   attr_reader :id
 
   def initialize(name = 'Unknown', age = nil, parent_permission: true)
+    super()
     @id = generate_id
     @name = name
     @age = age
@@ -39,6 +40,7 @@ end
 # Base Decorator
 class Decorator < Nameable
   def initialize(nameable)
+    super()
     @nameable = nameable
   end
 
