@@ -39,10 +39,8 @@ In this project, I will start building my school library app. In this initial st
 ### Key Features <a name="key-features"></a>
 
 - **Follow a correct Gitflow**
-- **Implement classes and objects in Ruby**
-- **Implement encapsulation and inheritance with Ruby**
+- **Implement composition (as an example of the design pattern)**
 - **Run a program using the command line**
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,7 +103,7 @@ N/A.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Decorate a class**
+- [ ] **Set up associations**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
