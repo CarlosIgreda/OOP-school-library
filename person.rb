@@ -1,8 +1,12 @@
-class Person
+require_relative 'nameable'
+
+# Person class modified to inherit from Nameable
+class Person < Nameable
   attr_accessor :name, :age
   attr_reader :id
 
   def initialize(name = 'Unknown', age = nil, parent_permission: true)
+    super() # Add super call here
     @id = generate_id
     @name = name
     @age = age
@@ -11,6 +15,10 @@ class Person
 
   def can_use_services?
     of_age? || @parent_permission
+  end
+
+  def correct_name
+    @name
   end
 
   private
