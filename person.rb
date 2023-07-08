@@ -5,7 +5,7 @@ class Nameable
 end
 
 class Person < Nameable
-  attr_accessor :name, :age, :books
+  attr_accessor :name, :age, :books, :rentals
   attr_reader :id, :rentals
 
   def initialize(age, name = 'Unknown', parent_permission: true)
