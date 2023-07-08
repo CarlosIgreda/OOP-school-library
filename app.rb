@@ -91,7 +91,7 @@ class App
     book_index = choose_book
     return unless book_index
 
-    puts 'Select a person from the following list by number(not id):'
+    puts 'Select a person from the following list by number (not id):'
     @people.each_with_index do |person, index|
       person_type = person.is_a?(Student) ? 'Student' : 'Teacher'
       puts "#{index}) [#{person_type}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
@@ -104,7 +104,7 @@ class App
       return
     end
 
-    print 'Date (YYYY/MM/DD): '
+    print 'Date: '
     date = gets.chomp
 
     rental = Rental.new(date, @people[person_index], @books[book_index])
