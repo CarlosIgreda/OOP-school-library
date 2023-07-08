@@ -25,7 +25,7 @@ def rentals_list(person_id)
 end
 
 def exit_app
-  @app.exit
+  @app.exit_application
 end
 
 def menu(option)
