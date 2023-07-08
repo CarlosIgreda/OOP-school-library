@@ -5,7 +5,7 @@ class Nameable
 end
 
 class Person < Nameable
-  attr_accessor :name, :age, :books, :rentals
+  attr_accessor :name, :age, :books
   attr_reader :id, :rentals
 
   def initialize(age, name = 'Unknown', parent_permission: true)
@@ -30,8 +30,8 @@ class Person < Nameable
     @name
   end
 
-  def create_rental(book, date)
-    Rental.new(date, self, book)
+  def generate_rental(rental)
+    @rentals << rental
   end
 
   private
